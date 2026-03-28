@@ -1,4 +1,5 @@
 import { createContext, useContext, useState, useEffect } from 'react';
+import defaultSubjects from '../data/defaultSubjects.json';
 
 const PrepContext = createContext();
 
@@ -27,8 +28,14 @@ export function PrepProvider({ children }) {
   // 2. Subjects and Topics
   const [subjects, setSubjects] = useState(() => {
     const saved = localStorage.getItem('prep_subjects');
-    return saved ? JSON.parse(saved) : []; 
-    // Subject shape: { id, name, topics: [{ id, name, estimatedMinutes }] }
+    if (saved) return JSON.parse(saved);
+
+    // Initial seed from JSON
+    return defaultSubjects.map(s => ({
+      ...s,
+      id: generateId(),
+      topics: s.topics.map(t => ({ ...t, id: generateId() }))
+    }));
   });
 
   // 3. Schedule (Mapping 'Day X' to topics and allocated time)
@@ -197,6 +204,11 @@ export function PrepProvider({ children }) {
     });
   };
 
+  const resetData = () => {
+    localStorage.clear();
+    window.location.reload();
+  };
+
   const value = {
     settings,
     saveSettings,
@@ -211,7 +223,8 @@ export function PrepProvider({ children }) {
     history,
     markTopicComplete,
     currentStreak: currentStreak(),
-    completedDays
+    completedDays,
+    resetData
   };
 
   return <PrepContext.Provider value={value}>{children}</PrepContext.Provider>;

@@ -3,7 +3,7 @@ import { usePrep } from '../context/PrepContext';
 import { Flag, ArrowRight } from 'lucide-react';
 
 export default function SetupView() {
-  const { saveSettings } = usePrep();
+  const { saveSettings, resetData } = usePrep();
   const [days, setDays] = useState('30');
 
   const handleSubmit = (e) => {
@@ -70,6 +70,23 @@ export default function SetupView() {
             <ArrowRight size={20} />
           </button>
         </form>
+      </div>
+
+      <div style={{ marginTop: '2rem', textAlign: 'center' }}>
+        <button 
+          onClick={resetData}
+          style={{ 
+            background: 'none', 
+            border: 'none', 
+            color: 'var(--text-secondary)', 
+            fontSize: '0.75rem', 
+            textDecoration: 'underline',
+            cursor: 'pointer',
+            opacity: 0.5
+          }}
+        >
+          Reset Application to Defaults
+        </button>
       </div>
     </div>
   );

@@ -3,7 +3,7 @@ import { usePrep, getTodayStr } from '../context/PrepContext';
 import { Flame, PlayCircle, CalendarCheck, CheckCircle } from 'lucide-react';
 
 export default function DashboardView({ onStartTimer }) {
-  const { settings, currentStreak, schedule, subjects, history, completedDays } = usePrep();
+  const { settings, currentStreak, schedule, subjects, history, completedDays, resetData } = usePrep();
 
   // Calculate days remaining
   const start = new Date(settings.startDate);
@@ -147,6 +147,21 @@ export default function DashboardView({ onStartTimer }) {
             })}
           </div>
         )}
+      </div>
+
+      {/* Danger Zone */}
+      <div style={{ marginTop: '4rem', paddingTop: '2rem', borderTop: '1px solid rgba(255,255,255,0.05)', textAlign: 'center' }}>
+        <button 
+          onClick={() => {
+            if (window.confirm("This will clear all your progress and subjects. Are you sure?")) {
+              resetData();
+            }
+          }}
+          className="btn-secondary" 
+          style={{ fontSize: '0.875rem', color: 'var(--error)', opacity: 0.6 }}
+        >
+          Reset Application Data
+        </button>
       </div>
     </div>
   );

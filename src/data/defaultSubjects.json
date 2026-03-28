@@ -1,0 +1,17 @@
+[
+  {
+    "name": "General Studies",
+    "topics": [
+      { "name": "Indian Polity", "estimatedMinutes": 120 },
+      { "name": "Modern History", "estimatedMinutes": 180 },
+      { "name": "Geography", "estimatedMinutes": 150 }
+    ]
+  },
+  {
+    "name": "Aptitude & Reasoning",
+    "topics": [
+      { "name": "Quantitative Aptitude", "estimatedMinutes": 90 },
+      { "name": "Logical Reasoning", "estimatedMinutes": 60 }
+    ]
+  }
+]
