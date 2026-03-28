@@ -1,9 +1,9 @@
 import React from 'react';
 import { usePrep, getTodayStr } from '../context/PrepContext';
-import { Flame, PlayCircle, CalendarCheck, CheckCircle } from 'lucide-react';
+import { Flame, PlayCircle, CalendarCheck, CheckCircle, Layers } from 'lucide-react';
 
-export default function DashboardView({ onStartTimer }) {
-  const { settings, currentStreak, schedule, subjects, history, completedDays, resetData } = usePrep();
+export default function DashboardView({ onStartTimer, onSwitchPlan }) {
+  const { settings, currentStreak, schedule, subjects, history, completedDays, resetData, activePlan } = usePrep();
 
   // Calculate days remaining
   const start = new Date(settings.startDate);
@@ -30,10 +30,18 @@ export default function DashboardView({ onStartTimer }) {
     <div className="view-header animate-slide-up">
       <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '2rem' }}>
         <div>
-          <h1 className="heading-1">Dashboard</h1>
+          <h1 className="heading-1">{activePlan.name}</h1>
           <p className="body-text">Day {Math.min(diffDays + 1, settings.totalDays)} of {settings.totalDays}</p>
         </div>
-        <div className="glass-panel" style={{ 
+        <div style={{ display: 'flex', gap: '8px', alignItems: 'center' }}>
+          <button 
+            onClick={onSwitchPlan}
+            className="btn-secondary"
+            style={{ padding: '0.6rem', background: 'rgba(139, 92, 246, 0.1)', color: 'var(--accent-secondary)' }}
+          >
+            <Layers size={20} />
+          </button>
+          <div className="glass-panel" style={{ 
           padding: '0.5rem 1rem', 
           display: 'flex', 
           alignItems: 'center', 
@@ -45,6 +53,7 @@ export default function DashboardView({ onStartTimer }) {
           <span style={{ fontWeight: 700, fontSize: '1.25rem', color: currentStreak > 0 ? 'var(--warning)' : 'var(--text-secondary)' }}>
             {currentStreak}
           </span>
+        </div>
         </div>
       </div>
 

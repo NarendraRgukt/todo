@@ -6,6 +6,7 @@ import SubjectsView from './views/SubjectsView';
 import ScheduleView from './views/ScheduleView';
 import SetupView from './views/SetupView';
 import TimerView from './views/TimerView';
+import PlanSwitcherView from './views/PlanSwitcherView';
 
 function App() {
   const { settings } = usePrep();
@@ -29,7 +30,9 @@ function App() {
   const renderView = () => {
     switch (activeTab) {
       case 'dashboard':
-        return <DashboardView onStartTimer={setActiveTopic} />;
+        return <DashboardView onStartTimer={setActiveTopic} onSwitchPlan={() => setActiveTab('plans')} />;
+      case 'plans':
+        return <PlanSwitcherView onBack={() => setActiveTab('dashboard')} />;
       case 'subjects':
         return <SubjectsView />;
       case 'schedule':

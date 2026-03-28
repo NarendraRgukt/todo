@@ -1,17 +1,84 @@
 [
   {
-    "name": "General Studies",
+    "name": "Bank PO Reasoning",
     "topics": [
-      { "name": "Indian Polity", "estimatedMinutes": 120 },
-      { "name": "Modern History", "estimatedMinutes": 180 },
-      { "name": "Geography", "estimatedMinutes": 150 }
+      { "name": "Seating", "estimatedMinutes": 90 },
+      { "name": "Tables", "estimatedMinutes": 90 },
+      { "name": "Logical Reasoning", "estimatedMinutes": 90 },
+      { "name": "Syllogism", "estimatedMinutes": 90 },
+      { "name": "Input-Output", "estimatedMinutes": 90 },
+      { "name": "Coding-Decoding", "estimatedMinutes": 90 },
+      { "name": "Alphanumeric Sequences", "estimatedMinutes": 90 },
+      { "name": "Blood Relations", "estimatedMinutes": 90 },
+      { "name": "Order", "estimatedMinutes": 90 },
+      { "name": "Information Sufficiency", "estimatedMinutes": 90 },
+      { "name": "Distance and Direction", "estimatedMinutes": 90 },
+      { "name": "Coded Inequality", "estimatedMinutes": 90 },
+      { "name": "Verbal Reasoning", "estimatedMinutes": 90 }
     ]
   },
   {
-    "name": "Aptitude & Reasoning",
+    "name": "Banking PO Mathematics",
     "topics": [
-      { "name": "Quantitative Aptitude", "estimatedMinutes": 90 },
-      { "name": "Logical Reasoning", "estimatedMinutes": 60 }
+      { "name": "Simplification and Approximation", "estimatedMinutes": 90 },
+      { "name": "Data Interpretation", "estimatedMinutes": 90 },
+      { "name": "Data Sufficiency", "estimatedMinutes": 90 },
+      { "name": "Series", "estimatedMinutes": 90 },
+      { "name": "Ratio and Proportions", "estimatedMinutes": 90 },
+      { "name": "Quadratic Equations", "estimatedMinutes": 90 },
+      { "name": "Averages", "estimatedMinutes": 90 },
+      { "name": "Boats and Flows", "estimatedMinutes": 90 },
+      { "name": "Simple and Compound Interest", "estimatedMinutes": 90 },
+      { "name": "Percentages", "estimatedMinutes": 90 },
+      { "name": "Profit and Loss", "estimatedMinutes": 90 },
+      { "name": "Mixtures and Alligation", "estimatedMinutes": 90 },
+      { "name": "Time and Distance", "estimatedMinutes": 90 },
+      { "name": "Probability", "estimatedMinutes": 90 },
+      { "name": "Partnership", "estimatedMinutes": 90 },
+      { "name": "Tubes and Tanks", "estimatedMinutes": 90 }
+    ]
+  },
+  {
+    "name": "Current Affairs",
+    "topics": [
+      { "name": "Banking News", "estimatedMinutes": 90 },
+      { "name": "Financial Affairs", "estimatedMinutes": 90 },
+      { "name": "National News", "estimatedMinutes": 90 },
+      { "name": "International News", "estimatedMinutes": 90 },
+      { "name": "Government Schemes & Policies", "estimatedMinutes": 90 },
+      { "name": "Important Agreements & Contracts", "estimatedMinutes": 90 },
+      { "name": "Visits & Appointments", "estimatedMinutes": 90 },
+      { "name": "Awards & Honors", "estimatedMinutes": 90 },
+      { "name": "Summits & Conferences", "estimatedMinutes": 90 },
+      { "name": "Obituaries", "estimatedMinutes": 90 }
+    ]
+  },
+  {
+    "name": "Banking and Financial Awareness",
+    "topics": [
+      { "name": "Financial News", "estimatedMinutes": 90 },
+      { "name": "Banking Acronyms", "estimatedMinutes": 90 },
+      { "name": "Banking Code 1949", "estimatedMinutes": 90 },
+      { "name": "RBI Interest Rates and Functions", "estimatedMinutes": 90 },
+      { "name": "Account Types", "estimatedMinutes": 90 },
+      { "name": "Negotiable Instruments Act 1881", "estimatedMinutes": 90 },
+      { "name": "Money Market Instruments", "estimatedMinutes": 90 },
+      { "name": "Primary Sector Lending", "estimatedMinutes": 90 },
+      { "name": "Financial Inclusion", "estimatedMinutes": 90 },
+      { "name": "Banking Ombudsman (Commissioner)", "estimatedMinutes": 90 }
+    ]
+  },
+  {
+    "name": "Static Awareness",
+    "topics": [
+      { "name": "International Organizations", "estimatedMinutes": 90 },
+      { "name": "Important Dates", "estimatedMinutes": 90 },
+      { "name": "Capitals and Currencies", "estimatedMinutes": 90 },
+      { "name": "Treaties and Agreements", "estimatedMinutes": 90 },
+      { "name": "Books and Authors", "estimatedMinutes": 90 },
+      { "name": "Honors and Awards", "estimatedMinutes": 90 },
+      { "name": "National and International Meetings", "estimatedMinutes": 90 },
+      { "name": "Famous Obituaries", "estimatedMinutes": 90 }
     ]
   }
 ]

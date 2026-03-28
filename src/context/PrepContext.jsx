@@ -1,4 +1,4 @@
-import { createContext, useContext, useState, useEffect } from 'react';
+import { createContext, useContext, useState, useEffect, useMemo } from 'react';
 import defaultSubjects from '../data/defaultSubjects.json';
 
 const PrepContext = createContext();
@@ -7,70 +7,143 @@ export function usePrep() {
   return useContext(PrepContext);
 }
 
-// Helper to generate a unique ID
 const generateId = () => Math.random().toString(36).substring(2, 9);
 
-// Get today's local date string YYYY-MM-DD
 export const getTodayStr = () => {
     const d = new Date();
-    // adjust to local timezone offset
     d.setMinutes(d.getMinutes() - d.getTimezoneOffset());
     return d.toISOString().split('T')[0];
 };
 
-export function PrepProvider({ children }) {
-  // 1. Settings (Days of prep)
-  const [settings, setSettings] = useState(() => {
-    const saved = localStorage.getItem('prep_settings');
-    return saved ? JSON.parse(saved) : { setupComplete: false, totalDays: 30, startDate: getTodayStr() };
-  });
+const getDefaultSubjects = () => defaultSubjects.map(s => ({
+  ...s,
+  id: generateId(),
+  topics: s.topics.map(t => ({ ...t, id: generateId() }))
+}));
 
-  // 2. Subjects and Topics
-  const [subjects, setSubjects] = useState(() => {
-    const saved = localStorage.getItem('prep_subjects');
+export function PrepProvider({ children }) {
+  // --- New Multi-Plan State ---
+  const [plans, setPlans] = useState(() => {
+    const saved = localStorage.getItem('prep_multi_plans');
     if (saved) return JSON.parse(saved);
 
-    // Initial seed from JSON
-    return defaultSubjects.map(s => ({
-      ...s,
+    // Migration Logic: Check for legacy single-plan data
+    const legacySettings = localStorage.getItem('prep_settings');
+    if (legacySettings) {
+      const mainPlan = {
+        id: 'main-plan',
+        name: 'Main Plan',
+        settings: JSON.parse(legacySettings),
+        subjects: JSON.parse(localStorage.getItem('prep_subjects') || '[]'),
+        schedule: JSON.parse(localStorage.getItem('prep_schedule') || '{}'),
+        history: JSON.parse(localStorage.getItem('prep_history') || '{}'),
+        completedDays: JSON.parse(localStorage.getItem('prep_completedDays') || '{}')
+      };
+      
+      // Clear legacy data once migrated
+      localStorage.removeItem('prep_settings');
+      localStorage.removeItem('prep_subjects');
+      localStorage.removeItem('prep_schedule');
+      localStorage.removeItem('prep_history');
+      localStorage.removeItem('prep_completedDays');
+      
+      return [mainPlan];
+    }
+
+    // Default first plan for new users
+    return [{
       id: generateId(),
-      topics: s.topics.map(t => ({ ...t, id: generateId() }))
-    }));
+      name: 'My Exam Plan',
+      settings: { setupComplete: false, totalDays: 30, startDate: getTodayStr() },
+      subjects: getDefaultSubjects(),
+      schedule: {},
+      history: {},
+      completedDays: {}
+    }];
   });
 
-  // 3. Schedule (Mapping 'Day X' to topics and allocated time)
-  // shape: { dayIndex (0 based): [{ topicId, allocatedMinutes }] }
-  const [schedule, setSchedule] = useState(() => {
-    const saved = localStorage.getItem('prep_schedule');
-    return saved ? JSON.parse(saved) : {};
+  const [activePlanId, setActivePlanId] = useState(() => {
+    return localStorage.getItem('prep_activePlanId') || (plans.length > 0 ? plans[0].id : null);
   });
 
-  // 4. History (Tracking completions for streak calculation)
-  // shape: { topicId: completionDateString }
-  const [history, setHistory] = useState(() => {
-    const saved = localStorage.getItem('prep_history');
-    return saved ? JSON.parse(saved) : {};
-  });
+  // Derived active plan data
+  const activePlan = useMemo(() => {
+    return plans.find(p => p.id === activePlanId) || plans[0];
+  }, [plans, activePlanId]);
 
-  // 5. Streaks 
-  // shape: { "YYYY-MM-DD": true } for fully completed days
-  const [completedDays, setCompletedDays] = useState(() => {
-    const saved = localStorage.getItem('prep_completedDays');
-    return saved ? JSON.parse(saved) : {};
-  });
+  // Individual states synced to active plan for component compatibility
+  const [settings, setSettings] = useState(activePlan.settings);
+  const [subjects, setSubjects] = useState(activePlan.subjects);
+  const [schedule, setSchedule] = useState(activePlan.schedule);
+  const [history, setHistory] = useState(activePlan.history);
+  const [completedDays, setCompletedDays] = useState(activePlan.completedDays);
 
-  // Persist state changes to localStorage
+  // Update individual states when switching plans
   useEffect(() => {
-    localStorage.setItem('prep_settings', JSON.stringify(settings));
-    localStorage.setItem('prep_subjects', JSON.stringify(subjects));
-    localStorage.setItem('prep_schedule', JSON.stringify(schedule));
-    localStorage.setItem('prep_history', JSON.stringify(history));
-    localStorage.setItem('prep_completedDays', JSON.stringify(completedDays));
-  }, [settings, subjects, schedule, history, completedDays]);
+    if (activePlan) {
+      setSettings(activePlan.settings);
+      setSubjects(activePlan.subjects);
+      setSchedule(activePlan.schedule);
+      setHistory(activePlan.history);
+      setCompletedDays(activePlan.completedDays);
+      localStorage.setItem('prep_activePlanId', activePlanId);
+    }
+  }, [activePlanId]);
 
-  // Actions
+  // Persist all plans to localStorage whenever ANY active data changes
+  useEffect(() => {
+    const updatedPlans = plans.map(p => {
+      if (p.id === activePlanId) {
+        return { ...p, settings, subjects, schedule, history, completedDays };
+      }
+      return p;
+    });
+    
+    // Only update if something actually changed to avoid infinite loops
+    const hasChanged = JSON.stringify(updatedPlans) !== JSON.stringify(plans);
+    if (hasChanged) {
+      setPlans(updatedPlans);
+      localStorage.setItem('prep_multi_plans', JSON.stringify(updatedPlans));
+    }
+  }, [settings, subjects, schedule, history, completedDays, activePlanId]);
+
+  // --- Actions ---
+
+  const createPlan = (name, totalDays) => {
+    const newPlan = {
+      id: generateId(),
+      name,
+      settings: { setupComplete: true, totalDays, startDate: getTodayStr() },
+      subjects: getDefaultSubjects(),
+      schedule: {},
+      history: {},
+      completedDays: {}
+    };
+    const nextPlans = [...plans, newPlan];
+    setPlans(nextPlans);
+    setActivePlanId(newPlan.id);
+  };
+
+  const switchPlan = (planId) => {
+    setActivePlanId(planId);
+  };
+
+  const deletePlan = (planId) => {
+    if (plans.length <= 1) return; // Must have at least one plan
+    const updatedPlans = plans.filter(p => p.id !== planId);
+    setPlans(updatedPlans);
+    if (activePlanId === planId) {
+      setActivePlanId(updatedPlans[0].id);
+    }
+    localStorage.setItem('prep_multi_plans', JSON.stringify(updatedPlans));
+  };
+
+  const renameActivePlan = (newName) => {
+    setPlans(prev => prev.map(p => p.id === activePlanId ? { ...p, name: newName } : p));
+  };
+
   const saveSettings = (totalDays) => {
-    setSettings({ setupComplete: true, totalDays, startDate: getTodayStr() });
+    setSettings({ ...settings, setupComplete: true, totalDays, startDate: getTodayStr() });
   };
 
   const addSubject = (name) => {
@@ -89,7 +162,6 @@ export function PrepProvider({ children }) {
   const assignTopicToDay = (dayIndex, topicId, allocatedMinutes = 60) => {
     setSchedule(prev => {
       const dayTasks = prev[dayIndex] || [];
-      // avoid duplicates
       if (dayTasks.find(t => t.topicId === topicId)) return prev;
       return { ...prev, [dayIndex]: [...dayTasks, { topicId, allocatedMinutes }] };
     });
@@ -106,16 +178,12 @@ export function PrepProvider({ children }) {
     const today = getTodayStr();
     setHistory(prev => ({ ...prev, [topicId]: today }));
     
-    // Check if all scheduled topics for today are completed
-    // First figure out what day index today is relative to startDate
     const start = new Date(settings.startDate);
     const now = new Date();
     const diffTime = Math.abs(now - start);
     const dayIndex = Math.floor(diffTime / (1000 * 60 * 60 * 24));
     
     const todaysSchedule = schedule[dayIndex] || [];
-    // If we just completed a task, we need to check if all tasks in todaysSchedule are now in history
-    // Since state closure contains old history, we build nextHistory:
     const nextHistory = { ...history, [topicId]: today };
     
     const allCompleted = todaysSchedule.every(t => nextHistory[t.topicId]);
@@ -124,25 +192,21 @@ export function PrepProvider({ children }) {
     }
   };
 
-  // Helper to get streak
   const currentStreak = () => {
     let streak = 0;
     const d = new Date();
     d.setMinutes(d.getMinutes() - d.getTimezoneOffset());
     
-    // if today is completed, streak starts at 1, else 0
     let checkDateStr = d.toISOString().split('T')[0];
     
     if (completedDays[checkDateStr]) {
        streak++;
     } else {
-        // check yesterday
         d.setDate(d.getDate() - 1);
         checkDateStr = d.toISOString().split('T')[0];
-        if (!completedDays[checkDateStr]) return 0; // neither today nor yesterday completed = 0 streak
+        if (!completedDays[checkDateStr]) return 0;
     }
 
-    // go backwards
     while (true) {
         d.setDate(d.getDate() - 1);
         const prevStr = d.toISOString().split('T')[0];
@@ -155,13 +219,8 @@ export function PrepProvider({ children }) {
   const deleteSubject = (subjectId) => {
     const subject = subjects.find(s => s.id === subjectId);
     if (!subject) return;
-
     const topicIdsToRemove = subject.topics.map(t => t.id);
-
-    // 1. Remove subject
     setSubjects(prev => prev.filter(s => s.id !== subjectId));
-
-    // 2. Remove associated topics from schedule
     setSchedule(prev => {
       const nextSchedule = { ...prev };
       Object.keys(nextSchedule).forEach(day => {
@@ -169,25 +228,20 @@ export function PrepProvider({ children }) {
       });
       return nextSchedule;
     });
-
-    // 3. Optional: Remove from history
     setHistory(prev => {
-      const nextHistory = { ...history };
+      const nextHistory = { ...prev };
       topicIdsToRemove.forEach(id => delete nextHistory[id]);
       return nextHistory;
     });
   };
 
   const deleteTopic = (subjectId, topicId) => {
-    // 1. Remove topic from subject
     setSubjects(prev => prev.map(s => {
       if (s.id === subjectId) {
         return { ...s, topics: s.topics.filter(t => t.id !== topicId) };
       }
       return s;
     }));
-
-    // 2. Remove from schedule
     setSchedule(prev => {
       const nextSchedule = { ...prev };
       Object.keys(nextSchedule).forEach(day => {
@@ -195,8 +249,6 @@ export function PrepProvider({ children }) {
       });
       return nextSchedule;
     });
-
-    // 3. Remove from history
     setHistory(prev => {
       const nextHistory = { ...prev };
       delete nextHistory[topicId];
@@ -210,6 +262,13 @@ export function PrepProvider({ children }) {
   };
 
   const value = {
+    plans,
+    activePlanId,
+    activePlan,
+    createPlan,
+    switchPlan,
+    deletePlan,
+    renameActivePlan,
     settings,
     saveSettings,
     subjects,
