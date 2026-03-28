@@ -39,6 +39,16 @@
     ]
   },
   {
+    "name": "English Language",
+    "topics": [
+      { "name": "Reading Comprehension", "estimatedMinutes": 90 },
+      { "name": "Error Detection", "estimatedMinutes": 90 },
+      { "name": "Cloze Test", "estimatedMinutes": 90 },
+      { "name": "Para Jumbles", "estimatedMinutes": 90 },
+      { "name": "Fill in the Blanks", "estimatedMinutes": 90 }
+    ]
+  },
+  {
     "name": "Current Affairs",
     "topics": [
       { "name": "Banking News", "estimatedMinutes": 90 },
@@ -65,7 +75,7 @@
       { "name": "Money Market Instruments", "estimatedMinutes": 90 },
       { "name": "Primary Sector Lending", "estimatedMinutes": 90 },
       { "name": "Financial Inclusion", "estimatedMinutes": 90 },
-      { "name": "Banking Ombudsman (Commissioner)", "estimatedMinutes": 90 }
+      { "name": "Banking Ombudsman", "estimatedMinutes": 90 }
     ]
   },
   {
