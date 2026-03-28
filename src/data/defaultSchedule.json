@@ -1,0 +1,1502 @@
+[
+  {
+    "day": 0,
+    "topicName": "Seating",
+    "minutes": 180
+  },
+  {
+    "day": 0,
+    "topicName": "Simplification and Approximation",
+    "minutes": 180
+  },
+  {
+    "day": 0,
+    "topicName": "Banking News",
+    "minutes": 120
+  },
+  {
+    "day": 1,
+    "topicName": "Tables",
+    "minutes": 180
+  },
+  {
+    "day": 1,
+    "topicName": "Data Interpretation",
+    "minutes": 180
+  },
+  {
+    "day": 1,
+    "topicName": "Financial Affairs",
+    "minutes": 120
+  },
+  {
+    "day": 2,
+    "topicName": "Logical Reasoning",
+    "minutes": 180
+  },
+  {
+    "day": 2,
+    "topicName": "Data Sufficiency",
+    "minutes": 180
+  },
+  {
+    "day": 2,
+    "topicName": "National News",
+    "minutes": 120
+  },
+  {
+    "day": 3,
+    "topicName": "Syllogism",
+    "minutes": 180
+  },
+  {
+    "day": 3,
+    "topicName": "Series",
+    "minutes": 180
+  },
+  {
+    "day": 3,
+    "topicName": "International News",
+    "minutes": 120
+  },
+  {
+    "day": 4,
+    "topicName": "Input-Output",
+    "minutes": 180
+  },
+  {
+    "day": 4,
+    "topicName": "Ratio and Proportions",
+    "minutes": 180
+  },
+  {
+    "day": 4,
+    "topicName": "Government Schemes & Policies",
+    "minutes": 120
+  },
+  {
+    "day": 5,
+    "topicName": "Coding-Decoding",
+    "minutes": 180
+  },
+  {
+    "day": 5,
+    "topicName": "Quadratic Equations",
+    "minutes": 180
+  },
+  {
+    "day": 5,
+    "topicName": "RBI Interest Rates and Functions",
+    "minutes": 120
+  },
+  {
+    "day": 6,
+    "topicName": "Alphanumeric Sequences",
+    "minutes": 180
+  },
+  {
+    "day": 6,
+    "topicName": "Averages",
+    "minutes": 180
+  },
+  {
+    "day": 6,
+    "topicName": "Account Types",
+    "minutes": 120
+  },
+  {
+    "day": 7,
+    "topicName": "Blood Relations",
+    "minutes": 180
+  },
+  {
+    "day": 7,
+    "topicName": "Boats and Flows",
+    "minutes": 180
+  },
+  {
+    "day": 7,
+    "topicName": "Money Market Instruments",
+    "minutes": 120
+  },
+  {
+    "day": 8,
+    "topicName": "Order",
+    "minutes": 180
+  },
+  {
+    "day": 8,
+    "topicName": "Simple and Compound Interest",
+    "minutes": 180
+  },
+  {
+    "day": 8,
+    "topicName": "Capitals and Currencies",
+    "minutes": 120
+  },
+  {
+    "day": 9,
+    "topicName": "Information Sufficiency",
+    "minutes": 180
+  },
+  {
+    "day": 9,
+    "topicName": "Percentages",
+    "minutes": 180
+  },
+  {
+    "day": 9,
+    "topicName": "International Organizations",
+    "minutes": 120
+  },
+  {
+    "day": 10,
+    "topicName": "Distance and Direction",
+    "minutes": 180
+  },
+  {
+    "day": 10,
+    "topicName": "Profit and Loss",
+    "minutes": 180
+  },
+  {
+    "day": 10,
+    "topicName": "Banking News",
+    "minutes": 120
+  },
+  {
+    "day": 11,
+    "topicName": "Coded Inequality",
+    "minutes": 180
+  },
+  {
+    "day": 11,
+    "topicName": "Mixtures and Alligation",
+    "minutes": 180
+  },
+  {
+    "day": 11,
+    "topicName": "Financial Affairs",
+    "minutes": 120
+  },
+  {
+    "day": 12,
+    "topicName": "Verbal Reasoning",
+    "minutes": 180
+  },
+  {
+    "day": 12,
+    "topicName": "Time and Distance",
+    "minutes": 180
+  },
+  {
+    "day": 12,
+    "topicName": "National News",
+    "minutes": 120
+  },
+  {
+    "day": 13,
+    "topicName": "Seating",
+    "minutes": 180
+  },
+  {
+    "day": 13,
+    "topicName": "Probability",
+    "minutes": 180
+  },
+  {
+    "day": 13,
+    "topicName": "International News",
+    "minutes": 120
+  },
+  {
+    "day": 14,
+    "topicName": "Tables",
+    "minutes": 180
+  },
+  {
+    "day": 14,
+    "topicName": "Partnership",
+    "minutes": 180
+  },
+  {
+    "day": 14,
+    "topicName": "Government Schemes & Policies",
+    "minutes": 120
+  },
+  {
+    "day": 15,
+    "topicName": "Logical Reasoning",
+    "minutes": 180
+  },
+  {
+    "day": 15,
+    "topicName": "Tubes and Tanks",
+    "minutes": 180
+  },
+  {
+    "day": 15,
+    "topicName": "RBI Interest Rates and Functions",
+    "minutes": 120
+  },
+  {
+    "day": 16,
+    "topicName": "Syllogism",
+    "minutes": 180
+  },
+  {
+    "day": 16,
+    "topicName": "Simplification and Approximation",
+    "minutes": 180
+  },
+  {
+    "day": 16,
+    "topicName": "Account Types",
+    "minutes": 120
+  },
+  {
+    "day": 17,
+    "topicName": "Input-Output",
+    "minutes": 180
+  },
+  {
+    "day": 17,
+    "topicName": "Data Interpretation",
+    "minutes": 180
+  },
+  {
+    "day": 17,
+    "topicName": "Money Market Instruments",
+    "minutes": 120
+  },
+  {
+    "day": 18,
+    "topicName": "Coding-Decoding",
+    "minutes": 180
+  },
+  {
+    "day": 18,
+    "topicName": "Data Sufficiency",
+    "minutes": 180
+  },
+  {
+    "day": 18,
+    "topicName": "Capitals and Currencies",
+    "minutes": 120
+  },
+  {
+    "day": 19,
+    "topicName": "Alphanumeric Sequences",
+    "minutes": 180
+  },
+  {
+    "day": 19,
+    "topicName": "Series",
+    "minutes": 180
+  },
+  {
+    "day": 19,
+    "topicName": "International Organizations",
+    "minutes": 120
+  },
+  {
+    "day": 20,
+    "topicName": "Blood Relations",
+    "minutes": 180
+  },
+  {
+    "day": 20,
+    "topicName": "Ratio and Proportions",
+    "minutes": 180
+  },
+  {
+    "day": 20,
+    "topicName": "Banking News",
+    "minutes": 120
+  },
+  {
+    "day": 21,
+    "topicName": "Order",
+    "minutes": 180
+  },
+  {
+    "day": 21,
+    "topicName": "Quadratic Equations",
+    "minutes": 180
+  },
+  {
+    "day": 21,
+    "topicName": "Financial Affairs",
+    "minutes": 120
+  },
+  {
+    "day": 22,
+    "topicName": "Information Sufficiency",
+    "minutes": 180
+  },
+  {
+    "day": 22,
+    "topicName": "Averages",
+    "minutes": 180
+  },
+  {
+    "day": 22,
+    "topicName": "National News",
+    "minutes": 120
+  },
+  {
+    "day": 23,
+    "topicName": "Distance and Direction",
+    "minutes": 180
+  },
+  {
+    "day": 23,
+    "topicName": "Boats and Flows",
+    "minutes": 180
+  },
+  {
+    "day": 23,
+    "topicName": "International News",
+    "minutes": 120
+  },
+  {
+    "day": 24,
+    "topicName": "Coded Inequality",
+    "minutes": 180
+  },
+  {
+    "day": 24,
+    "topicName": "Simple and Compound Interest",
+    "minutes": 180
+  },
+  {
+    "day": 24,
+    "topicName": "Government Schemes & Policies",
+    "minutes": 120
+  },
+  {
+    "day": 25,
+    "topicName": "Verbal Reasoning",
+    "minutes": 180
+  },
+  {
+    "day": 25,
+    "topicName": "Percentages",
+    "minutes": 180
+  },
+  {
+    "day": 25,
+    "topicName": "RBI Interest Rates and Functions",
+    "minutes": 120
+  },
+  {
+    "day": 26,
+    "topicName": "Seating",
+    "minutes": 180
+  },
+  {
+    "day": 26,
+    "topicName": "Profit and Loss",
+    "minutes": 180
+  },
+  {
+    "day": 26,
+    "topicName": "Account Types",
+    "minutes": 120
+  },
+  {
+    "day": 27,
+    "topicName": "Tables",
+    "minutes": 180
+  },
+  {
+    "day": 27,
+    "topicName": "Mixtures and Alligation",
+    "minutes": 180
+  },
+  {
+    "day": 27,
+    "topicName": "Money Market Instruments",
+    "minutes": 120
+  },
+  {
+    "day": 28,
+    "topicName": "Logical Reasoning",
+    "minutes": 180
+  },
+  {
+    "day": 28,
+    "topicName": "Time and Distance",
+    "minutes": 180
+  },
+  {
+    "day": 28,
+    "topicName": "Capitals and Currencies",
+    "minutes": 120
+  },
+  {
+    "day": 29,
+    "topicName": "Syllogism",
+    "minutes": 180
+  },
+  {
+    "day": 29,
+    "topicName": "Probability",
+    "minutes": 180
+  },
+  {
+    "day": 29,
+    "topicName": "International Organizations",
+    "minutes": 120
+  },
+  {
+    "day": 30,
+    "topicName": "Input-Output",
+    "minutes": 180
+  },
+  {
+    "day": 30,
+    "topicName": "Partnership",
+    "minutes": 180
+  },
+  {
+    "day": 30,
+    "topicName": "Banking News",
+    "minutes": 120
+  },
+  {
+    "day": 31,
+    "topicName": "Coding-Decoding",
+    "minutes": 180
+  },
+  {
+    "day": 31,
+    "topicName": "Tubes and Tanks",
+    "minutes": 180
+  },
+  {
+    "day": 31,
+    "topicName": "Financial Affairs",
+    "minutes": 120
+  },
+  {
+    "day": 32,
+    "topicName": "Alphanumeric Sequences",
+    "minutes": 180
+  },
+  {
+    "day": 32,
+    "topicName": "Simplification and Approximation",
+    "minutes": 180
+  },
+  {
+    "day": 32,
+    "topicName": "National News",
+    "minutes": 120
+  },
+  {
+    "day": 33,
+    "topicName": "Blood Relations",
+    "minutes": 180
+  },
+  {
+    "day": 33,
+    "topicName": "Data Interpretation",
+    "minutes": 180
+  },
+  {
+    "day": 33,
+    "topicName": "International News",
+    "minutes": 120
+  },
+  {
+    "day": 34,
+    "topicName": "Order",
+    "minutes": 180
+  },
+  {
+    "day": 34,
+    "topicName": "Data Sufficiency",
+    "minutes": 180
+  },
+  {
+    "day": 34,
+    "topicName": "Government Schemes & Policies",
+    "minutes": 120
+  },
+  {
+    "day": 35,
+    "topicName": "Information Sufficiency",
+    "minutes": 180
+  },
+  {
+    "day": 35,
+    "topicName": "Series",
+    "minutes": 180
+  },
+  {
+    "day": 35,
+    "topicName": "RBI Interest Rates and Functions",
+    "minutes": 120
+  },
+  {
+    "day": 36,
+    "topicName": "Distance and Direction",
+    "minutes": 180
+  },
+  {
+    "day": 36,
+    "topicName": "Ratio and Proportions",
+    "minutes": 180
+  },
+  {
+    "day": 36,
+    "topicName": "Account Types",
+    "minutes": 120
+  },
+  {
+    "day": 37,
+    "topicName": "Coded Inequality",
+    "minutes": 180
+  },
+  {
+    "day": 37,
+    "topicName": "Quadratic Equations",
+    "minutes": 180
+  },
+  {
+    "day": 37,
+    "topicName": "Money Market Instruments",
+    "minutes": 120
+  },
+  {
+    "day": 38,
+    "topicName": "Verbal Reasoning",
+    "minutes": 180
+  },
+  {
+    "day": 38,
+    "topicName": "Averages",
+    "minutes": 180
+  },
+  {
+    "day": 38,
+    "topicName": "Capitals and Currencies",
+    "minutes": 120
+  },
+  {
+    "day": 39,
+    "topicName": "Seating",
+    "minutes": 180
+  },
+  {
+    "day": 39,
+    "topicName": "Boats and Flows",
+    "minutes": 180
+  },
+  {
+    "day": 39,
+    "topicName": "International Organizations",
+    "minutes": 120
+  },
+  {
+    "day": 40,
+    "topicName": "Tables",
+    "minutes": 180
+  },
+  {
+    "day": 40,
+    "topicName": "Simple and Compound Interest",
+    "minutes": 180
+  },
+  {
+    "day": 40,
+    "topicName": "Banking News",
+    "minutes": 120
+  },
+  {
+    "day": 41,
+    "topicName": "Logical Reasoning",
+    "minutes": 180
+  },
+  {
+    "day": 41,
+    "topicName": "Percentages",
+    "minutes": 180
+  },
+  {
+    "day": 41,
+    "topicName": "Financial Affairs",
+    "minutes": 120
+  },
+  {
+    "day": 42,
+    "topicName": "Syllogism",
+    "minutes": 180
+  },
+  {
+    "day": 42,
+    "topicName": "Profit and Loss",
+    "minutes": 180
+  },
+  {
+    "day": 42,
+    "topicName": "National News",
+    "minutes": 120
+  },
+  {
+    "day": 43,
+    "topicName": "Input-Output",
+    "minutes": 180
+  },
+  {
+    "day": 43,
+    "topicName": "Mixtures and Alligation",
+    "minutes": 180
+  },
+  {
+    "day": 43,
+    "topicName": "International News",
+    "minutes": 120
+  },
+  {
+    "day": 44,
+    "topicName": "Coding-Decoding",
+    "minutes": 180
+  },
+  {
+    "day": 44,
+    "topicName": "Time and Distance",
+    "minutes": 180
+  },
+  {
+    "day": 44,
+    "topicName": "Government Schemes & Policies",
+    "minutes": 120
+  },
+  {
+    "day": 45,
+    "topicName": "Alphanumeric Sequences",
+    "minutes": 180
+  },
+  {
+    "day": 45,
+    "topicName": "Probability",
+    "minutes": 180
+  },
+  {
+    "day": 45,
+    "topicName": "RBI Interest Rates and Functions",
+    "minutes": 120
+  },
+  {
+    "day": 46,
+    "topicName": "Blood Relations",
+    "minutes": 180
+  },
+  {
+    "day": 46,
+    "topicName": "Partnership",
+    "minutes": 180
+  },
+  {
+    "day": 46,
+    "topicName": "Account Types",
+    "minutes": 120
+  },
+  {
+    "day": 47,
+    "topicName": "Order",
+    "minutes": 180
+  },
+  {
+    "day": 47,
+    "topicName": "Tubes and Tanks",
+    "minutes": 180
+  },
+  {
+    "day": 47,
+    "topicName": "Money Market Instruments",
+    "minutes": 120
+  },
+  {
+    "day": 48,
+    "topicName": "Information Sufficiency",
+    "minutes": 180
+  },
+  {
+    "day": 48,
+    "topicName": "Simplification and Approximation",
+    "minutes": 180
+  },
+  {
+    "day": 48,
+    "topicName": "Capitals and Currencies",
+    "minutes": 120
+  },
+  {
+    "day": 49,
+    "topicName": "Distance and Direction",
+    "minutes": 180
+  },
+  {
+    "day": 49,
+    "topicName": "Data Interpretation",
+    "minutes": 180
+  },
+  {
+    "day": 49,
+    "topicName": "International Organizations",
+    "minutes": 120
+  },
+  {
+    "day": 50,
+    "topicName": "Coded Inequality",
+    "minutes": 180
+  },
+  {
+    "day": 50,
+    "topicName": "Data Sufficiency",
+    "minutes": 180
+  },
+  {
+    "day": 50,
+    "topicName": "Banking News",
+    "minutes": 120
+  },
+  {
+    "day": 51,
+    "topicName": "Verbal Reasoning",
+    "minutes": 180
+  },
+  {
+    "day": 51,
+    "topicName": "Series",
+    "minutes": 180
+  },
+  {
+    "day": 51,
+    "topicName": "Financial Affairs",
+    "minutes": 120
+  },
+  {
+    "day": 52,
+    "topicName": "Seating",
+    "minutes": 180
+  },
+  {
+    "day": 52,
+    "topicName": "Ratio and Proportions",
+    "minutes": 180
+  },
+  {
+    "day": 52,
+    "topicName": "National News",
+    "minutes": 120
+  },
+  {
+    "day": 53,
+    "topicName": "Tables",
+    "minutes": 180
+  },
+  {
+    "day": 53,
+    "topicName": "Quadratic Equations",
+    "minutes": 180
+  },
+  {
+    "day": 53,
+    "topicName": "International News",
+    "minutes": 120
+  },
+  {
+    "day": 54,
+    "topicName": "Logical Reasoning",
+    "minutes": 180
+  },
+  {
+    "day": 54,
+    "topicName": "Averages",
+    "minutes": 180
+  },
+  {
+    "day": 54,
+    "topicName": "Government Schemes & Policies",
+    "minutes": 120
+  },
+  {
+    "day": 55,
+    "topicName": "Syllogism",
+    "minutes": 180
+  },
+  {
+    "day": 55,
+    "topicName": "Boats and Flows",
+    "minutes": 180
+  },
+  {
+    "day": 55,
+    "topicName": "RBI Interest Rates and Functions",
+    "minutes": 120
+  },
+  {
+    "day": 56,
+    "topicName": "Input-Output",
+    "minutes": 180
+  },
+  {
+    "day": 56,
+    "topicName": "Simple and Compound Interest",
+    "minutes": 180
+  },
+  {
+    "day": 56,
+    "topicName": "Account Types",
+    "minutes": 120
+  },
+  {
+    "day": 57,
+    "topicName": "Coding-Decoding",
+    "minutes": 180
+  },
+  {
+    "day": 57,
+    "topicName": "Percentages",
+    "minutes": 180
+  },
+  {
+    "day": 57,
+    "topicName": "Money Market Instruments",
+    "minutes": 120
+  },
+  {
+    "day": 58,
+    "topicName": "Alphanumeric Sequences",
+    "minutes": 180
+  },
+  {
+    "day": 58,
+    "topicName": "Profit and Loss",
+    "minutes": 180
+  },
+  {
+    "day": 58,
+    "topicName": "Capitals and Currencies",
+    "minutes": 120
+  },
+  {
+    "day": 59,
+    "topicName": "Blood Relations",
+    "minutes": 180
+  },
+  {
+    "day": 59,
+    "topicName": "Mixtures and Alligation",
+    "minutes": 180
+  },
+  {
+    "day": 59,
+    "topicName": "International Organizations",
+    "minutes": 120
+  },
+  {
+    "day": 60,
+    "topicName": "Order",
+    "minutes": 180
+  },
+  {
+    "day": 60,
+    "topicName": "Time and Distance",
+    "minutes": 180
+  },
+  {
+    "day": 60,
+    "topicName": "Banking News",
+    "minutes": 120
+  },
+  {
+    "day": 61,
+    "topicName": "Information Sufficiency",
+    "minutes": 180
+  },
+  {
+    "day": 61,
+    "topicName": "Probability",
+    "minutes": 180
+  },
+  {
+    "day": 61,
+    "topicName": "Financial Affairs",
+    "minutes": 120
+  },
+  {
+    "day": 62,
+    "topicName": "Distance and Direction",
+    "minutes": 180
+  },
+  {
+    "day": 62,
+    "topicName": "Partnership",
+    "minutes": 180
+  },
+  {
+    "day": 62,
+    "topicName": "National News",
+    "minutes": 120
+  },
+  {
+    "day": 63,
+    "topicName": "Coded Inequality",
+    "minutes": 180
+  },
+  {
+    "day": 63,
+    "topicName": "Tubes and Tanks",
+    "minutes": 180
+  },
+  {
+    "day": 63,
+    "topicName": "International News",
+    "minutes": 120
+  },
+  {
+    "day": 64,
+    "topicName": "Verbal Reasoning",
+    "minutes": 180
+  },
+  {
+    "day": 64,
+    "topicName": "Simplification and Approximation",
+    "minutes": 180
+  },
+  {
+    "day": 64,
+    "topicName": "Government Schemes & Policies",
+    "minutes": 120
+  },
+  {
+    "day": 65,
+    "topicName": "Seating",
+    "minutes": 180
+  },
+  {
+    "day": 65,
+    "topicName": "Data Interpretation",
+    "minutes": 180
+  },
+  {
+    "day": 65,
+    "topicName": "RBI Interest Rates and Functions",
+    "minutes": 120
+  },
+  {
+    "day": 66,
+    "topicName": "Tables",
+    "minutes": 180
+  },
+  {
+    "day": 66,
+    "topicName": "Data Sufficiency",
+    "minutes": 180
+  },
+  {
+    "day": 66,
+    "topicName": "Account Types",
+    "minutes": 120
+  },
+  {
+    "day": 67,
+    "topicName": "Logical Reasoning",
+    "minutes": 180
+  },
+  {
+    "day": 67,
+    "topicName": "Series",
+    "minutes": 180
+  },
+  {
+    "day": 67,
+    "topicName": "Money Market Instruments",
+    "minutes": 120
+  },
+  {
+    "day": 68,
+    "topicName": "Syllogism",
+    "minutes": 180
+  },
+  {
+    "day": 68,
+    "topicName": "Ratio and Proportions",
+    "minutes": 180
+  },
+  {
+    "day": 68,
+    "topicName": "Capitals and Currencies",
+    "minutes": 120
+  },
+  {
+    "day": 69,
+    "topicName": "Input-Output",
+    "minutes": 180
+  },
+  {
+    "day": 69,
+    "topicName": "Quadratic Equations",
+    "minutes": 180
+  },
+  {
+    "day": 69,
+    "topicName": "International Organizations",
+    "minutes": 120
+  },
+  {
+    "day": 70,
+    "topicName": "Coding-Decoding",
+    "minutes": 180
+  },
+  {
+    "day": 70,
+    "topicName": "Averages",
+    "minutes": 180
+  },
+  {
+    "day": 70,
+    "topicName": "Banking News",
+    "minutes": 120
+  },
+  {
+    "day": 71,
+    "topicName": "Alphanumeric Sequences",
+    "minutes": 180
+  },
+  {
+    "day": 71,
+    "topicName": "Boats and Flows",
+    "minutes": 180
+  },
+  {
+    "day": 71,
+    "topicName": "Financial Affairs",
+    "minutes": 120
+  },
+  {
+    "day": 72,
+    "topicName": "Blood Relations",
+    "minutes": 180
+  },
+  {
+    "day": 72,
+    "topicName": "Simple and Compound Interest",
+    "minutes": 180
+  },
+  {
+    "day": 72,
+    "topicName": "National News",
+    "minutes": 120
+  },
+  {
+    "day": 73,
+    "topicName": "Order",
+    "minutes": 180
+  },
+  {
+    "day": 73,
+    "topicName": "Percentages",
+    "minutes": 180
+  },
+  {
+    "day": 73,
+    "topicName": "International News",
+    "minutes": 120
+  },
+  {
+    "day": 74,
+    "topicName": "Information Sufficiency",
+    "minutes": 180
+  },
+  {
+    "day": 74,
+    "topicName": "Profit and Loss",
+    "minutes": 180
+  },
+  {
+    "day": 74,
+    "topicName": "Government Schemes & Policies",
+    "minutes": 120
+  },
+  {
+    "day": 75,
+    "topicName": "Distance and Direction",
+    "minutes": 180
+  },
+  {
+    "day": 75,
+    "topicName": "Mixtures and Alligation",
+    "minutes": 180
+  },
+  {
+    "day": 75,
+    "topicName": "RBI Interest Rates and Functions",
+    "minutes": 120
+  },
+  {
+    "day": 76,
+    "topicName": "Coded Inequality",
+    "minutes": 180
+  },
+  {
+    "day": 76,
+    "topicName": "Time and Distance",
+    "minutes": 180
+  },
+  {
+    "day": 76,
+    "topicName": "Account Types",
+    "minutes": 120
+  },
+  {
+    "day": 77,
+    "topicName": "Verbal Reasoning",
+    "minutes": 180
+  },
+  {
+    "day": 77,
+    "topicName": "Probability",
+    "minutes": 180
+  },
+  {
+    "day": 77,
+    "topicName": "Money Market Instruments",
+    "minutes": 120
+  },
+  {
+    "day": 78,
+    "topicName": "Seating",
+    "minutes": 180
+  },
+  {
+    "day": 78,
+    "topicName": "Partnership",
+    "minutes": 180
+  },
+  {
+    "day": 78,
+    "topicName": "Capitals and Currencies",
+    "minutes": 120
+  },
+  {
+    "day": 79,
+    "topicName": "Tables",
+    "minutes": 180
+  },
+  {
+    "day": 79,
+    "topicName": "Tubes and Tanks",
+    "minutes": 180
+  },
+  {
+    "day": 79,
+    "topicName": "International Organizations",
+    "minutes": 120
+  },
+  {
+    "day": 80,
+    "topicName": "Logical Reasoning",
+    "minutes": 180
+  },
+  {
+    "day": 80,
+    "topicName": "Simplification and Approximation",
+    "minutes": 180
+  },
+  {
+    "day": 80,
+    "topicName": "Banking News",
+    "minutes": 120
+  },
+  {
+    "day": 81,
+    "topicName": "Syllogism",
+    "minutes": 180
+  },
+  {
+    "day": 81,
+    "topicName": "Data Interpretation",
+    "minutes": 180
+  },
+  {
+    "day": 81,
+    "topicName": "Financial Affairs",
+    "minutes": 120
+  },
+  {
+    "day": 82,
+    "topicName": "Input-Output",
+    "minutes": 180
+  },
+  {
+    "day": 82,
+    "topicName": "Data Sufficiency",
+    "minutes": 180
+  },
+  {
+    "day": 82,
+    "topicName": "National News",
+    "minutes": 120
+  },
+  {
+    "day": 83,
+    "topicName": "Coding-Decoding",
+    "minutes": 180
+  },
+  {
+    "day": 83,
+    "topicName": "Series",
+    "minutes": 180
+  },
+  {
+    "day": 83,
+    "topicName": "International News",
+    "minutes": 120
+  },
+  {
+    "day": 84,
+    "topicName": "Alphanumeric Sequences",
+    "minutes": 180
+  },
+  {
+    "day": 84,
+    "topicName": "Ratio and Proportions",
+    "minutes": 180
+  },
+  {
+    "day": 84,
+    "topicName": "Government Schemes & Policies",
+    "minutes": 120
+  },
+  {
+    "day": 85,
+    "topicName": "Blood Relations",
+    "minutes": 180
+  },
+  {
+    "day": 85,
+    "topicName": "Quadratic Equations",
+    "minutes": 180
+  },
+  {
+    "day": 85,
+    "topicName": "RBI Interest Rates and Functions",
+    "minutes": 120
+  },
+  {
+    "day": 86,
+    "topicName": "Order",
+    "minutes": 180
+  },
+  {
+    "day": 86,
+    "topicName": "Averages",
+    "minutes": 180
+  },
+  {
+    "day": 86,
+    "topicName": "Account Types",
+    "minutes": 120
+  },
+  {
+    "day": 87,
+    "topicName": "Information Sufficiency",
+    "minutes": 180
+  },
+  {
+    "day": 87,
+    "topicName": "Boats and Flows",
+    "minutes": 180
+  },
+  {
+    "day": 87,
+    "topicName": "Money Market Instruments",
+    "minutes": 120
+  },
+  {
+    "day": 88,
+    "topicName": "Distance and Direction",
+    "minutes": 180
+  },
+  {
+    "day": 88,
+    "topicName": "Simple and Compound Interest",
+    "minutes": 180
+  },
+  {
+    "day": 88,
+    "topicName": "Capitals and Currencies",
+    "minutes": 120
+  },
+  {
+    "day": 89,
+    "topicName": "Coded Inequality",
+    "minutes": 180
+  },
+  {
+    "day": 89,
+    "topicName": "Percentages",
+    "minutes": 180
+  },
+  {
+    "day": 89,
+    "topicName": "International Organizations",
+    "minutes": 120
+  },
+  {
+    "day": 90,
+    "topicName": "Verbal Reasoning",
+    "minutes": 180
+  },
+  {
+    "day": 90,
+    "topicName": "Profit and Loss",
+    "minutes": 180
+  },
+  {
+    "day": 90,
+    "topicName": "Banking News",
+    "minutes": 120
+  },
+  {
+    "day": 91,
+    "topicName": "Seating",
+    "minutes": 180
+  },
+  {
+    "day": 91,
+    "topicName": "Mixtures and Alligation",
+    "minutes": 180
+  },
+  {
+    "day": 91,
+    "topicName": "Financial Affairs",
+    "minutes": 120
+  },
+  {
+    "day": 92,
+    "topicName": "Tables",
+    "minutes": 180
+  },
+  {
+    "day": 92,
+    "topicName": "Time and Distance",
+    "minutes": 180
+  },
+  {
+    "day": 92,
+    "topicName": "National News",
+    "minutes": 120
+  },
+  {
+    "day": 93,
+    "topicName": "Logical Reasoning",
+    "minutes": 180
+  },
+  {
+    "day": 93,
+    "topicName": "Probability",
+    "minutes": 180
+  },
+  {
+    "day": 93,
+    "topicName": "International News",
+    "minutes": 120
+  },
+  {
+    "day": 94,
+    "topicName": "Syllogism",
+    "minutes": 180
+  },
+  {
+    "day": 94,
+    "topicName": "Partnership",
+    "minutes": 180
+  },
+  {
+    "day": 94,
+    "topicName": "Government Schemes & Policies",
+    "minutes": 120
+  },
+  {
+    "day": 95,
+    "topicName": "Input-Output",
+    "minutes": 180
+  },
+  {
+    "day": 95,
+    "topicName": "Tubes and Tanks",
+    "minutes": 180
+  },
+  {
+    "day": 95,
+    "topicName": "RBI Interest Rates and Functions",
+    "minutes": 120
+  },
+  {
+    "day": 96,
+    "topicName": "Coding-Decoding",
+    "minutes": 180
+  },
+  {
+    "day": 96,
+    "topicName": "Simplification and Approximation",
+    "minutes": 180
+  },
+  {
+    "day": 96,
+    "topicName": "Account Types",
+    "minutes": 120
+  },
+  {
+    "day": 97,
+    "topicName": "Alphanumeric Sequences",
+    "minutes": 180
+  },
+  {
+    "day": 97,
+    "topicName": "Data Interpretation",
+    "minutes": 180
+  },
+  {
+    "day": 97,
+    "topicName": "Money Market Instruments",
+    "minutes": 120
+  },
+  {
+    "day": 98,
+    "topicName": "Blood Relations",
+    "minutes": 180
+  },
+  {
+    "day": 98,
+    "topicName": "Data Sufficiency",
+    "minutes": 180
+  },
+  {
+    "day": 98,
+    "topicName": "Capitals and Currencies",
+    "minutes": 120
+  },
+  {
+    "day": 99,
+    "topicName": "Order",
+    "minutes": 180
+  },
+  {
+    "day": 99,
+    "topicName": "Series",
+    "minutes": 180
+  },
+  {
+    "day": 99,
+    "topicName": "International Organizations",
+    "minutes": 120
+  }
+]
