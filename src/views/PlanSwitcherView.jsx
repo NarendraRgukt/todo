@@ -1,12 +1,14 @@
 import React, { useState } from 'react';
 import { usePrep } from '../context/PrepContext';
 import { Layers, Plus, Trash2, ArrowRight, User, ArrowLeft } from 'lucide-react';
+import ConfirmationModal from '../components/ConfirmationModal';
 
 export default function PlanSwitcherView({ onBack }) {
   const { plans, activePlanId, switchPlan, createPlan, deletePlan, renameActivePlan } = usePrep();
   const [showCreate, setShowCreate] = useState(false);
   const [newPlanName, setNewPlanName] = useState('');
-  const [newPlanDays, setNewPlanDays] = useState('30');
+  const [newPlanDays, setNewPlanDays] = useState('100');
+  const [deletePlanId, setDeletePlanId] = useState(null);
 
   const handleCreate = (e) => {
     e.preventDefault();
@@ -67,7 +69,7 @@ export default function PlanSwitcherView({ onBack }) {
               <button 
                 onClick={(e) => {
                   e.stopPropagation();
-                  if (confirm('Delete this entire plan?')) deletePlan(plan.id);
+                  setDeletePlanId(plan.id);
                 }}
                 className="btn-secondary"
                 style={{ padding: '0.5rem', color: 'var(--error)' }}
@@ -138,6 +140,18 @@ export default function PlanSwitcherView({ onBack }) {
           </form>
         )}
       </div>
+
+      <ConfirmationModal 
+        isOpen={!!deletePlanId}
+        title="Delete Plan?"
+        message="This will remove all subjects and history for this plan. This action cannot be undone."
+        onConfirm={() => {
+          deletePlan(deletePlanId);
+          setDeletePlanId(null);
+        }}
+        onCancel={() => setDeletePlanId(null)}
+        confirmText="Remove Plan"
+      />
     </div>
   );
 }

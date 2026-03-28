@@ -1,5 +1,6 @@
 import { createContext, useContext, useState, useEffect, useMemo } from 'react';
 import defaultSubjects from '../data/defaultSubjects.json';
+import defaultSchedule from '../data/defaultSchedule.json';
 
 const PrepContext = createContext();
 
@@ -51,12 +52,28 @@ export function PrepProvider({ children }) {
     }
 
     // Default first plan for new users
+    const initialSubjects = getDefaultSubjects();
+    const initialSchedule = {};
+
+    // Map default schedule topics (by name) to the newly generated IDs
+    defaultSchedule.forEach(item => {
+      // Find the topic object across all subjects
+      for (const sub of initialSubjects) {
+        const topic = sub.topics.find(t => t.name === item.topicName);
+        if (topic) {
+          if (!initialSchedule[item.day]) initialSchedule[item.day] = [];
+          initialSchedule[item.day].push({ topicId: topic.id, allocatedMinutes: item.minutes });
+          break;
+        }
+      }
+    });
+
     return [{
       id: generateId(),
       name: 'My Exam Plan',
-      settings: { setupComplete: false, totalDays: 30, startDate: getTodayStr() },
-      subjects: getDefaultSubjects(),
-      schedule: {},
+      settings: { setupComplete: false, totalDays: 100, startDate: getTodayStr() },
+      subjects: initialSubjects,
+      schedule: initialSchedule,
       history: {},
       completedDays: {}
     }];
@@ -110,12 +127,30 @@ export function PrepProvider({ children }) {
   // --- Actions ---
 
   const createPlan = (name, totalDays) => {
+    const newSubjects = getDefaultSubjects();
+    const newSchedule = {};
+
+    // Map default schedule topics (by name) to the newly generated IDs
+    defaultSchedule.forEach(item => {
+      // We only include schedule items for days within the totalDays limit
+      if (item.day < totalDays) {
+        for (const sub of newSubjects) {
+          const topic = sub.topics.find(t => t.name === item.topicName);
+          if (topic) {
+            if (!newSchedule[item.day]) newSchedule[item.day] = [];
+            newSchedule[item.day].push({ topicId: topic.id, allocatedMinutes: item.minutes });
+            break;
+          }
+        }
+      }
+    });
+
     const newPlan = {
       id: generateId(),
       name,
       settings: { setupComplete: true, totalDays, startDate: getTodayStr() },
-      subjects: getDefaultSubjects(),
-      schedule: {},
+      subjects: newSubjects,
+      schedule: newSchedule,
       history: {},
       completedDays: {}
     };
